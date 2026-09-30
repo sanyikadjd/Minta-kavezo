@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minta Kávézó – Platán tér 3.</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f6;--ink:#261b16;--muted:#5f5650;--dark:#261b16;--blue:#2c57d6;--caramel:#c98a3c;--card:#ffffff;--line:#d8dfe7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17110e;--ink:#f2ece6;--muted:#b3a79d;--card:#221915;--line:#3a2d26}}
+:root[data-theme="dark"]{--bg:#17110e;--ink:#f2ece6;--muted:#b3a79d;--card:#221915;--line:#3a2d26}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;flex-wrap:wrap;gap:10px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.3rem;text-decoration:none}
+nav div a{margin-left:18px;text-decoration:none;font-weight:500}
+nav div a:hover{color:var(--caramel)}
+.hero{background:var(--dark);color:#f2ece6;padding-bottom:0;overflow:hidden}
+.hero .logo,.hero nav a{color:#f2ece6}
+.hero .wrap{display:grid;gap:10px}
+.hero h1{font-weight:800;font-size:clamp(2.5rem,10vw,5rem);margin:40px 0 16px;max-width:12ch}
+.hero p{max-width:36ch;color:#cdbfb3;font-size:1.1rem;margin:0 0 26px}
+.btn{display:inline-block;background:var(--caramel);color:#261b16;text-decoration:none;font-weight:500;padding:14px 26px;border-radius:10px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.cup{font-size:7rem;line-height:1;text-align:right;margin-top:10px;padding-bottom:12px}
+section{padding:64px 0 0}
+h2{font-size:clamp(1.9rem,6vw,2.7rem);margin-bottom:22px;font-weight:800}
+.menu{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 22px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border-bottom:0}
+.row h3{font-size:1.15rem;font-weight:600;margin-bottom:2px}
+.row p{margin:0;color:var(--muted);font-size:.95rem}
+.price{font-family:Fraunces,Georgia,serif;font-weight:800;color:var(--blue);white-space:nowrap}
+.cols{display:grid;gap:26px}
+.cols p{color:var(--muted);margin:0 0 12px;max-width:60ch}
+.badge{width:130px;height:130px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;text-align:center;font-family:Fraunces,Georgia,serif;font-weight:800;line-height:1.15;padding:14px}
+.info{display:grid;gap:14px}
+.box{border-left:5px solid var(--caramel);padding:4px 0 4px 16px}
+.box h3{font-size:1.15rem;margin-bottom:6px}
+.box p{margin:0;color:var(--muted)}
+footer{margin-top:72px;background:var(--dark);color:#cdbfb3;text-align:center;padding:28px 20px;font-size:.92rem}
+@media(min-width:720px){.cols{grid-template-columns:150px 1fr;align-items:center}.info{grid-template-columns:repeat(3,1fr)}.hero .wrap{grid-template-columns:1.3fr 1fr;align-items:end}.hero nav{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">☕ Minta Kávézó</a>
+      <div><a href="#itallap">Itallap</a><a href="#rolunk">Rólunk</a><a href="#kapcsolat">Kapcsolat</a></div>
+    </nav>
+    <div>
+      <h1>Jó kávé, lassú délután.</h1>
+      <p>Minta Kávézó – ez egy mintaoldal, minden szöveg és adat kitalált.</p>
+      <a class="btn" href="#itallap">Itallap megnézése</a>
+    </div>
+    <div class="cup" aria-hidden="true">☕</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="itallap">
+    <h2>Itallap</h2>
+    <div class="menu">
+      <div class="row"><div><h3>Espresso</h3><p>Erős, rövid, tiszta ízű</p></div><span class="price">690 Ft</span></div>
+      <div class="row"><div><h3>Cappuccino</h3><p>Espresso, gőzölt tej, tejhab</p></div><span class="price">890 Ft</span></div>
+      <div class="row"><div><h3>Flat white</h3><p>Dupla espresso, selymes tej</p></div><span class="price">990 Ft</span></div>
+      <div class="row"><div><h3>Jegeskávé</h3><p>Hideg kávé, jég, vanília</p></div><span class="price">1 090 Ft</span></div>
+      <div class="row"><div><h3>Forró csokoládé</h3><p>Étcsokoládéból, habbal</p></div><span class="price">990 Ft</span></div>
+      <div class="row"><div><h3>Túrótorta</h3><p>Napi házi sütemény</p></div><span class="price">1 190 Ft</span></div>
+    </div>
+  </section>
+
+  <section id="rolunk">
+    <h2>Rólunk</h2>
+    <div class="cols">
+      <div class="badge">Minta<br>János<br>és csapata</div>
+      <div>
+        <p>Szia, Minta János vagyok. 2019-ben nyitottam a Minta Kávézót azzal a céllal, hogy legyen egy hely, ahol nem kell sietni.</p>
+        <p>A kávénkat kis pörkölőből hozzuk, a süteményeket minden reggel helyben sütjük. Gyere be egy csészére!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kapcsolat">
+    <h2>Kapcsolat</h2>
+    <div class="info">
+      <div class="box"><h3>Cím</h3><p>1234 Mintaváros,<br>Platán tér 3.</p></div>
+      <div class="box"><h3>Nyitvatartás</h3><p>H–P: 7:00–19:00<br>Szo–V: 8:00–18:00</p></div>
+      <div class="box"><h3>Elérhetőség</h3><p>+36 20 987 6543<br>szia@mintakavezo.hu</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Minta Kávézó – minta weboldal, nem valódi kávézó.</footer>
+</body>
+</html>
